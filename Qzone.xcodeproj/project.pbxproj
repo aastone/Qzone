@@ -140,6 +140,11 @@
 		038E9AD0188CF2D300D09D21 /* tabbar_separate_ugc_bg_v@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 038E9A5E188CF2D300D09D21 /* tabbar_separate_ugc_bg_v@2x.png */; };
 		038E9AD1188CF2D300D09D21 /* tabbar_separate_ugc_line_v.png in Resources */ = {isa = PBXBuildFile; fileRef = 038E9A5F188CF2D300D09D21 /* tabbar_separate_ugc_line_v.png */; };
 		038E9AD2188CF2D300D09D21 /* tabbar_separate_ugc_line_v@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 038E9A60188CF2D300D09D21 /* tabbar_separate_ugc_line_v@2x.png */; };
+		038E9AD5188CF3F400D09D21 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9AD4188CF3F400D09D21 /* MenuView.m */; };
+		038E9AD8188CF40800D09D21 /* ComposeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9AD7188CF40800D09D21 /* ComposeView.m */; };
+		038E9ADB188CF41C00D09D21 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9ADA188CF41C00D09D21 /* SegmentView.m */; };
+		038E9ADE188CF44B00D09D21 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9ADD188CF44B00D09D21 /* SettingCell.m */; };
+		038E9AE1188CF45700D09D21 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9AE0188CF45700D09D21 /* Dock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,6 +301,16 @@
 		038E9A5E188CF2D300D09D21 /* tabbar_separate_ugc_bg_v@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_separate_ugc_bg_v@2x.png"; sourceTree = "<group>"; };
 		038E9A5F188CF2D300D09D21 /* tabbar_separate_ugc_line_v.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_separate_ugc_line_v.png; sourceTree = "<group>"; };
 		038E9A60188CF2D300D09D21 /* tabbar_separate_ugc_line_v@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_separate_ugc_line_v@2x.png"; sourceTree = "<group>"; };
+		038E9AD3188CF3F400D09D21 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuView.h; path = view/MenuView.h; sourceTree = "<group>"; };
+		038E9AD4188CF3F400D09D21 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuView.m; path = view/MenuView.m; sourceTree = "<group>"; };
+		038E9AD6188CF40800D09D21 /* ComposeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComposeView.h; path = view/ComposeView.h; sourceTree = "<group>"; };
+		038E9AD7188CF40800D09D21 /* ComposeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComposeView.m; path = view/ComposeView.m; sourceTree = "<group>"; };
+		038E9AD9188CF41C00D09D21 /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegmentView.h; path = view/SegmentView.h; sourceTree = "<group>"; };
+		038E9ADA188CF41C00D09D21 /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SegmentView.m; path = view/SegmentView.m; sourceTree = "<group>"; };
+		038E9ADC188CF44B00D09D21 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingCell.h; path = view/SettingCell.h; sourceTree = "<group>"; };
+		038E9ADD188CF44B00D09D21 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingCell.m; path = view/SettingCell.m; sourceTree = "<group>"; };
+		038E9ADF188CF45700D09D21 /* Dock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dock.h; sourceTree = "<group>"; };
+		038E9AE0188CF45700D09D21 /* Dock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,10 +440,20 @@
 		038E99D2188CC99000D09D21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				038E9ADF188CF45700D09D21 /* Dock.h */,
+				038E9AE0188CF45700D09D21 /* Dock.m */,
 				038E99DC188CD7B500D09D21 /* IconView.h */,
 				038E99DD188CD7B500D09D21 /* IconView.m */,
 				038E99DF188CE93100D09D21 /* MenuItemView.h */,
 				038E99E0188CE93100D09D21 /* MenuItemView.m */,
+				038E9AD3188CF3F400D09D21 /* MenuView.h */,
+				038E9AD4188CF3F400D09D21 /* MenuView.m */,
+				038E9AD6188CF40800D09D21 /* ComposeView.h */,
+				038E9AD7188CF40800D09D21 /* ComposeView.m */,
+				038E9AD9188CF41C00D09D21 /* SegmentView.h */,
+				038E9ADA188CF41C00D09D21 /* SegmentView.m */,
+				038E9ADC188CF44B00D09D21 /* SettingCell.h */,
+				038E9ADD188CF44B00D09D21 /* SettingCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -858,12 +883,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				038E9AE1188CF45700D09D21 /* Dock.m in Sources */,
 				038E99B2188CC94400D09D21 /* ViewController.m in Sources */,
 				038E99D6188CCA1100D09D21 /* DockItem.m in Sources */,
+				038E9ADE188CF44B00D09D21 /* SettingCell.m in Sources */,
+				038E9AD5188CF3F400D09D21 /* MenuView.m in Sources */,
+				038E9AD8188CF40800D09D21 /* ComposeView.m in Sources */,
 				038E99E1188CE93100D09D21 /* MenuItemView.m in Sources */,
 				038E99D9188CCD4100D09D21 /* CellItem.m in Sources */,
 				038E99AC188CC94400D09D21 /* AppDelegate.m in Sources */,
 				038E99A8188CC94400D09D21 /* main.m in Sources */,
+				038E9ADB188CF41C00D09D21 /* SegmentView.m in Sources */,
 				038E99DE188CD7B500D09D21 /* IconView.m in Sources */,
 				038E99E4188CEA8F00D09D21 /* UIImage+Fit.m in Sources */,
 			);
