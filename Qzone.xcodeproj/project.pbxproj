@@ -146,6 +146,7 @@
 		038E9ADE188CF44B00D09D21 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9ADD188CF44B00D09D21 /* SettingCell.m */; };
 		038E9AE1188CF45700D09D21 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9AE0188CF45700D09D21 /* Dock.m */; };
 		038E9AE5188D00B800D09D21 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9AE4188D00B800D09D21 /* LoginViewController.m */; };
+		03D55921188E05690016DF07 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D55920188E05690016DF07 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -314,6 +315,8 @@
 		038E9AE0188CF45700D09D21 /* Dock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dock.m; sourceTree = "<group>"; };
 		038E9AE3188D00B800D09D21 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = controller/LoginViewController.h; sourceTree = "<group>"; };
 		038E9AE4188D00B800D09D21 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = controller/LoginViewController.m; sourceTree = "<group>"; };
+		03D5591F188E05690016DF07 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = controller/HomeViewController.h; sourceTree = "<group>"; };
+		03D55920188E05690016DF07 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = controller/HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -682,6 +685,8 @@
 			children = (
 				038E9AE3188D00B800D09D21 /* LoginViewController.h */,
 				038E9AE4188D00B800D09D21 /* LoginViewController.m */,
+				03D5591F188E05690016DF07 /* HomeViewController.h */,
+				03D55920188E05690016DF07 /* HomeViewController.m */,
 			);
 			name = home;
 			sourceTree = "<group>";
@@ -904,6 +909,7 @@
 				038E9AD5188CF3F400D09D21 /* MenuView.m in Sources */,
 				038E9AD8188CF40800D09D21 /* ComposeView.m in Sources */,
 				038E99E1188CE93100D09D21 /* MenuItemView.m in Sources */,
+				03D55921188E05690016DF07 /* HomeViewController.m in Sources */,
 				038E99D9188CCD4100D09D21 /* CellItem.m in Sources */,
 				038E99AC188CC94400D09D21 /* AppDelegate.m in Sources */,
 				038E99A8188CC94400D09D21 /* main.m in Sources */,
@@ -1120,6 +1126,7 @@
 				038E99CC188CC94400D09D21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		038E99CD188CC94400D09D21 /* Build configuration list for PBXNativeTarget "QzoneTests" */ = {
 			isa = XCConfigurationList;
@@ -1128,6 +1135,7 @@
 				038E99CF188CC94400D09D21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

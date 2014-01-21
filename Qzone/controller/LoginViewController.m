@@ -42,14 +42,6 @@
 
 #pragma mark - Login Acitions
 
-- (void)loginSuccess
-{
-    [_indicator stopAnimating];
-    self.view.userInteractionEnabled = YES;
-//    [self performSegueWithIdentifier:@"home" sender:nil];
-    NSLog(@"success");
-}
-
 - (IBAction)login
 {
     if (_qq.text.length == 0) {
@@ -65,6 +57,14 @@
     
     self.view.userInteractionEnabled = NO;
     [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(loginSuccess) userInfo:nil repeats:NO];
+}
+
+- (void)loginSuccess
+{
+    [_indicator stopAnimating];
+    self.view.userInteractionEnabled = YES;
+    [self performSegueWithIdentifier:@"home" sender:nil];
+    NSLog(@"success");
 }
 
 - (IBAction)rmbPwd:(UIButton *)sender
