@@ -147,6 +147,17 @@
 		038E9AE1188CF45700D09D21 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9AE0188CF45700D09D21 /* Dock.m */; };
 		038E9AE5188D00B800D09D21 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9AE4188D00B800D09D21 /* LoginViewController.m */; };
 		03D55921188E05690016DF07 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D55920188E05690016DF07 /* HomeViewController.m */; };
+		03D55925188E46640016DF07 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D55924188E46640016DF07 /* AboutMeViewController.m */; };
+		03D55929188E46F90016DF07 /* AllStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D55928188E46F90016DF07 /* AllStatusViewController.m */; };
+		03D5592D188E470E0016DF07 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D5592C188E470E0016DF07 /* AppViewController.m */; };
+		03D55931188E472D0016DF07 /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D55930188E472D0016DF07 /* FriendViewController.m */; };
+		03D55935188E498D0016DF07 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D55934188E498D0016DF07 /* ProfileViewController.m */; };
+		03D5593A188E4A030016DF07 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D55938188E4A030016DF07 /* AboutViewController.m */; };
+		03D5593B188E4A030016DF07 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D55939188E4A030016DF07 /* AboutViewController.xib */; };
+		03D5593F188E4A200016DF07 /* SuggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D5593D188E4A200016DF07 /* SuggestViewController.m */; };
+		03D55940188E4A200016DF07 /* SuggestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D5593E188E4A200016DF07 /* SuggestViewController.xib */; };
+		03D55943188E4A340016DF07 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D55942188E4A340016DF07 /* SettingViewController.m */; };
+		03D55945188E4EB10016DF07 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 03D55944188E4EB10016DF07 /* about.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -317,6 +328,25 @@
 		038E9AE4188D00B800D09D21 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = controller/LoginViewController.m; sourceTree = "<group>"; };
 		03D5591F188E05690016DF07 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = controller/HomeViewController.h; sourceTree = "<group>"; };
 		03D55920188E05690016DF07 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = controller/HomeViewController.m; sourceTree = "<group>"; };
+		03D55923188E46640016DF07 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutMeViewController.h; path = controller/AboutMeViewController.h; sourceTree = "<group>"; };
+		03D55924188E46640016DF07 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutMeViewController.m; path = controller/AboutMeViewController.m; sourceTree = "<group>"; };
+		03D55927188E46F90016DF07 /* AllStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllStatusViewController.h; path = controller/AllStatusViewController.h; sourceTree = "<group>"; };
+		03D55928188E46F90016DF07 /* AllStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllStatusViewController.m; path = controller/AllStatusViewController.m; sourceTree = "<group>"; };
+		03D5592B188E470E0016DF07 /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
+		03D5592C188E470E0016DF07 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
+		03D5592F188E472D0016DF07 /* FriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendViewController.h; path = controller/FriendViewController.h; sourceTree = "<group>"; };
+		03D55930188E472D0016DF07 /* FriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendViewController.m; path = controller/FriendViewController.m; sourceTree = "<group>"; };
+		03D55933188E498D0016DF07 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = controller/ProfileViewController.h; sourceTree = "<group>"; };
+		03D55934188E498D0016DF07 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = controller/ProfileViewController.m; sourceTree = "<group>"; };
+		03D55937188E4A030016DF07 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = controller/setting/AboutViewController.h; sourceTree = "<group>"; };
+		03D55938188E4A030016DF07 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = controller/setting/AboutViewController.m; sourceTree = "<group>"; };
+		03D55939188E4A030016DF07 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutViewController.xib; path = controller/setting/AboutViewController.xib; sourceTree = "<group>"; };
+		03D5593C188E4A200016DF07 /* SuggestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuggestViewController.h; path = controller/setting/SuggestViewController.h; sourceTree = "<group>"; };
+		03D5593D188E4A200016DF07 /* SuggestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuggestViewController.m; path = controller/setting/SuggestViewController.m; sourceTree = "<group>"; };
+		03D5593E188E4A200016DF07 /* SuggestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SuggestViewController.xib; path = controller/setting/SuggestViewController.xib; sourceTree = "<group>"; };
+		03D55941188E4A340016DF07 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = controller/setting/SettingViewController.h; sourceTree = "<group>"; };
+		03D55942188E4A340016DF07 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = controller/setting/SettingViewController.m; sourceTree = "<group>"; };
+		03D55944188E4EB10016DF07 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = "../../../QQZone-HD/QQ空间-HD/about.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +423,7 @@
 		038E99A2188CC94400D09D21 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03D55944188E4EB10016DF07 /* about.html */,
 				038E99E5188CF2D300D09D21 /* image */,
 				038E99A3188CC94400D09D21 /* Qzone-Info.plist */,
 				038E99A4188CC94400D09D21 /* InfoPlist.strings */,
@@ -467,6 +498,12 @@
 		038E99D3188CC99700D09D21 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03D55936188E49E20016DF07 /* setting */,
+				03D55932188E49790016DF07 /* profile */,
+				03D5592E188E47170016DF07 /* friend */,
+				03D5592A188E47010016DF07 /* app */,
+				03D55926188E46E20016DF07 /* all_status */,
+				03D55922188E463D0016DF07 /* about_me */,
 				038E9AE2188D008900D09D21 /* home */,
 			);
 			name = Controller;
@@ -691,6 +728,66 @@
 			name = home;
 			sourceTree = "<group>";
 		};
+		03D55922188E463D0016DF07 /* about_me */ = {
+			isa = PBXGroup;
+			children = (
+				03D55923188E46640016DF07 /* AboutMeViewController.h */,
+				03D55924188E46640016DF07 /* AboutMeViewController.m */,
+			);
+			name = about_me;
+			sourceTree = "<group>";
+		};
+		03D55926188E46E20016DF07 /* all_status */ = {
+			isa = PBXGroup;
+			children = (
+				03D55927188E46F90016DF07 /* AllStatusViewController.h */,
+				03D55928188E46F90016DF07 /* AllStatusViewController.m */,
+			);
+			name = all_status;
+			sourceTree = "<group>";
+		};
+		03D5592A188E47010016DF07 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				03D5592B188E470E0016DF07 /* AppViewController.h */,
+				03D5592C188E470E0016DF07 /* AppViewController.m */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		03D5592E188E47170016DF07 /* friend */ = {
+			isa = PBXGroup;
+			children = (
+				03D5592F188E472D0016DF07 /* FriendViewController.h */,
+				03D55930188E472D0016DF07 /* FriendViewController.m */,
+			);
+			name = friend;
+			sourceTree = "<group>";
+		};
+		03D55932188E49790016DF07 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				03D55933188E498D0016DF07 /* ProfileViewController.h */,
+				03D55934188E498D0016DF07 /* ProfileViewController.m */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		03D55936188E49E20016DF07 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				03D55937188E4A030016DF07 /* AboutViewController.h */,
+				03D55938188E4A030016DF07 /* AboutViewController.m */,
+				03D55939188E4A030016DF07 /* AboutViewController.xib */,
+				03D5593C188E4A200016DF07 /* SuggestViewController.h */,
+				03D5593D188E4A200016DF07 /* SuggestViewController.m */,
+				03D5593E188E4A200016DF07 /* SuggestViewController.xib */,
+				03D55941188E4A340016DF07 /* SettingViewController.h */,
+				03D55942188E4A340016DF07 /* SettingViewController.m */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -799,6 +896,7 @@
 				038E9AAF188CF2D300D09D21 /* SegmentedControl_Selected.png in Resources */,
 				038E9AB6188CF2D300D09D21 /* tab_bar_friend_icon@2x.png in Resources */,
 				038E9ABE188CF2D300D09D21 /* tabbar_badge_new@2x.png in Resources */,
+				03D55945188E4EB10016DF07 /* about.html in Resources */,
 				038E9A88188CF2D300D09D21 /* Icon.png in Resources */,
 				038E9AC9188CF2D300D09D21 /* tabbar_separate_line.png in Resources */,
 				038E9A94188CF2D300D09D21 /* login_default_avatar@2x.png in Resources */,
@@ -840,6 +938,7 @@
 				038E9ACA188CF2D300D09D21 /* tabbar_separate_line@2x.png in Resources */,
 				038E9ABC188CF2D300D09D21 /* tab_bar_pic_wall_icon@2x.png in Resources */,
 				038E9A8C188CF2D300D09D21 /* login_avatar_mask_normal@2x.png in Resources */,
+				03D55940188E4A200016DF07 /* SuggestViewController.xib in Resources */,
 				038E9A9C188CF2D300D09D21 /* logout_btn_bg_highlighted@2x.png in Resources */,
 				038E9A84188CF2D300D09D21 /* Default-Portrait.png in Resources */,
 				038E9A9A188CF2D300D09D21 /* login_stack_bg@2x.png in Resources */,
@@ -864,6 +963,7 @@
 				038E9A80188CF2D300D09D21 /* common_card_top_background_highlighted.png in Resources */,
 				038E9AA5188CF2D300D09D21 /* SegmentedControl_Left_Normal.png in Resources */,
 				038E9A6A188CF2D300D09D21 /* btn_addfriend_add.png in Resources */,
+				03D5593B188E4A030016DF07 /* AboutViewController.xib in Resources */,
 				038E9A63188CF2D300D09D21 /* BarButtonItem_Back_Normal@2x.png in Resources */,
 				038E9A9E188CF2D300D09D21 /* bg_profile_cover_shadow@2x.png in Resources */,
 				038E9A6C188CF2D300D09D21 /* btn_addfriend_add_click.png in Resources */,
@@ -904,18 +1004,26 @@
 				038E9AE1188CF45700D09D21 /* Dock.m in Sources */,
 				038E99B2188CC94400D09D21 /* ViewController.m in Sources */,
 				038E99D6188CCA1100D09D21 /* DockItem.m in Sources */,
+				03D5593A188E4A030016DF07 /* AboutViewController.m in Sources */,
 				038E9ADE188CF44B00D09D21 /* SettingCell.m in Sources */,
 				038E9AE5188D00B800D09D21 /* LoginViewController.m in Sources */,
+				03D55931188E472D0016DF07 /* FriendViewController.m in Sources */,
 				038E9AD5188CF3F400D09D21 /* MenuView.m in Sources */,
 				038E9AD8188CF40800D09D21 /* ComposeView.m in Sources */,
 				038E99E1188CE93100D09D21 /* MenuItemView.m in Sources */,
+				03D55943188E4A340016DF07 /* SettingViewController.m in Sources */,
 				03D55921188E05690016DF07 /* HomeViewController.m in Sources */,
 				038E99D9188CCD4100D09D21 /* CellItem.m in Sources */,
+				03D5592D188E470E0016DF07 /* AppViewController.m in Sources */,
 				038E99AC188CC94400D09D21 /* AppDelegate.m in Sources */,
 				038E99A8188CC94400D09D21 /* main.m in Sources */,
+				03D55935188E498D0016DF07 /* ProfileViewController.m in Sources */,
+				03D55929188E46F90016DF07 /* AllStatusViewController.m in Sources */,
 				038E9ADB188CF41C00D09D21 /* SegmentView.m in Sources */,
 				038E99DE188CD7B500D09D21 /* IconView.m in Sources */,
+				03D55925188E46640016DF07 /* AboutMeViewController.m in Sources */,
 				038E99E4188CEA8F00D09D21 /* UIImage+Fit.m in Sources */,
+				03D5593F188E4A200016DF07 /* SuggestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

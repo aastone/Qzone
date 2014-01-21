@@ -15,9 +15,9 @@
 {
     NSArray *_dockItems;
     
-    // 所有的按钮
+    // all buttons
     NSMutableArray *_btns;
-    // 所有的分隔线
+    // all dividers
     NSMutableArray *_dividers;
 }
 @end
@@ -28,16 +28,16 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // 1.添加所有的DockItem
+        // Add all DockItem
         [self addDockItems];
         
-        // 2.添加所有的按钮
+        // Add all buttons
         [self addBtns];
     }
     return self;
 }
 
-#pragma mark 添加所有的DockItem
+#pragma mark - Actions
 - (void)addDockItems
 {
     _dockItems = @[
@@ -47,7 +47,6 @@
                    ];
 }
 
-#pragma mark 添加所有的按钮
 - (void)addBtns
 {
     _btns = [NSMutableArray array];
@@ -57,16 +56,16 @@
     for (int i = 0; i<count; i++) {
         DockItem *item = _dockItems[i];
         
-        // 1.添加按钮
+        // add button
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.tag = i;
-        // 设置图片
+        // set image
         [btn setImage:[UIImage imageNamed:item.icon] forState:UIControlStateNormal];
         [self addSubview:btn];
         [btn addTarget:self action:@selector(composeItemClick:) forControlEvents:UIControlEventTouchUpInside];
         [_btns addObject:btn];
         
-        // 2.添加分隔线
+        //add divider
         if (i != 0) {
             UIImageView *divider = [[UIImageView alloc] init];
             divider.image = [UIImage imageNamed:@"tabbar_separate_ugc_line_v.png"];
@@ -83,15 +82,15 @@
     }
 }
 
-#pragma mark 旋转到某一个方向
+#pragma mark - rotate
 - (void)rotateToOrientation:(UIInterfaceOrientation)orientation
 {
     CGFloat x = 0;
     CGFloat width = 0;
     CGFloat height = 0;
     
-    if (UIInterfaceOrientationIsLandscape(orientation)) { // 横屏
-        // 1.设置按钮的frame
+    if (UIInterfaceOrientationIsLandscape(orientation)) {
+        //Horizontal
         int btnCount = _btns.count;
         for (int i = 0; i<btnCount; i++) {
             UIButton *btn = _btns[i];
@@ -100,15 +99,15 @@
         width = btnCount * kDockComposeItemWidthL;
         height = kDockComposeItemHeightL;
         
-        // 2.分隔线的frame
+        
         int dividerCount = _dividers.count;
         for (int i = 0; i<dividerCount; i++) {
             UIImageView *divider = _dividers[i];
             divider.hidden = NO;
             divider.frame = CGRectMake((i + 1) * kDockComposeItemWidthL, 0, 2, kDockComposeItemHeightL);
         }
-    } else { // 竖屏
-        // 1.设置按钮的frame
+    } else {
+        //Portrait
         int btnCount = _btns.count;
         for (int i = 0; i<btnCount; i++) {
             UIButton *btn = _btns[i];
@@ -117,7 +116,6 @@
         width = kDockComposeItemWidthP;
         height = btnCount * kDockComposeItemHeightP;
         
-        // 2.分隔线的frame
         int dividerCount = _dividers.count;
         for (int i = 0; i<dividerCount; i++) {
             UIImageView *divider = _dividers[i];

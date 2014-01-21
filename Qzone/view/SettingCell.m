@@ -14,7 +14,7 @@
     UISwitch *_switch;
     UIButton *_btn;
     
-    // 背景view
+    // background view
     UIImageView *_bgView;
     UIImageView *_selectedBgView;
 }
@@ -35,13 +35,11 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // 1.设置背景view
         _bgView = [[UIImageView alloc] init];
         self.backgroundView = _bgView;
         _selectedBgView =[[UIImageView alloc] init];
         self.selectedBackgroundView = _selectedBgView;
-        
-        // 2.设置标签背景颜色
+
         self.textLabel.backgroundColor = [UIColor clearColor];
         self.textLabel.highlightedTextColor = self.textLabel.textColor;
     }
@@ -51,21 +49,19 @@
 - (void)setIndexPath:(NSIndexPath *)indexPath
 {
     _indexPath = indexPath;
-    
-    // 1.算出文件名
+
     NSString *centerName = nil;
     int rowsCount = [_myTableView numberOfRowsInSection:indexPath.section];
     if (rowsCount == 1) {
         centerName = @"";
-    } else if (indexPath.row == 0) { // 顶部
+    } else if (indexPath.row == 0) {
         centerName = @"_top";
-    } else if (indexPath.row == rowsCount - 1) { // 底部
+    } else if (indexPath.row == rowsCount - 1) {
         centerName = @"_bottom";
-    } else { // 中间
+    } else {
         centerName = @"_middle";
     }
     
-    // 2.设置图片
     _bgView.image = [UIImage resizeImage:[NSString stringWithFormat:@"common_card%@_background.png", centerName]];
     _selectedBgView.image = [UIImage resizeImage:[NSString stringWithFormat:@"common_card%@_background_highlighted.png", centerName]];
 }
@@ -102,7 +98,6 @@
 
 - (void)switchChange
 {
-    // 更改模型的状态
     _cellItem.on = _switch.isOn;
     
     // NSLog(@"%@---%d", _cellItem.title, _switch.isOn);

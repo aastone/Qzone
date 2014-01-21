@@ -26,12 +26,12 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // 1.头像IconView
+        // Icon
         _iconView = [[IconView alloc] init];
         [_iconView addTarget:self action:@selector(iconClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_iconView];
         
-        // 2.菜单MenuView
+        // Menu
         _menuView = [[MenuView alloc] init];
         __unsafe_unretained Dock *dock = self;
         _menuView.menuItemClickBlock = ^(DockItem *item){
@@ -41,7 +41,7 @@
         };
         [self addSubview:_menuView];
         
-        // 3.制作（说说、照片、文章）ComposeView
+        // Compose
         _composeView = [[ComposeView alloc] init];
         _composeView.composeItemClickBlock = ^(DockItem *item) {
             if (dock.dockItemClickBlock) {
@@ -50,7 +50,7 @@
         };
         [self addSubview:_composeView];
         
-        // 4.分隔线
+        
         _divider = [[UIImageView alloc] init];
         _divider.image = [UIImage resizeImage:@"tabbar_separate_ugc_line_v.png"];
         [self addSubview:_divider];
@@ -58,37 +58,32 @@
     return self;
 }
 
-#pragma mark 点击了头像
+#pragma mark - Click the icon
 - (void)iconClick
 {
-    // 1.清除MenuView内部选中的Item
+    
     [_menuView unselectAll];
     
-    // 2.通知block
     if (_dockItemClickBlock) {
         DockItem *item = [DockItem itemWithIcon:nil className:@"ProfileViewController"];
         _dockItemClickBlock(item);
     }
 }
 
-#pragma mark 旋转到某个方向
+#pragma mark - Rotate
 - (void)rotateToOrientation:(UIInterfaceOrientation)orientation
 {
-    // 1.旋转compose
+    
     [_composeView rotateToOrientation:orientation];
     
-    // 2.旋转menu
     [_menuView rotateToOrientation:orientation composeFrame:_composeView.frame];
     
-    // 3.设置dock的宽高
     CGFloat dockWidth = _composeView.frame.size.width;
     CGFloat dockHeight = kDockHeight(orientation);
     self.frame = CGRectMake(0, 0, dockWidth, dockHeight);
     
-    // 4.分隔线
     _divider.frame = CGRectMake(dockWidth, 0, 2, dockHeight);
-    
-    // 5.旋转icon
+
     [_iconView rotateToOrientation:orientation];
 }
 

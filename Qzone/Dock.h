@@ -11,7 +11,7 @@
 @class DockItem;
 @interface Dock : UIView
 
-// 旋转到某一个方向
+
 - (void)rotateToOrientation:(UIInterfaceOrientation)orientation;
 
 
