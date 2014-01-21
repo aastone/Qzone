@@ -145,6 +145,7 @@
 		038E9ADB188CF41C00D09D21 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9ADA188CF41C00D09D21 /* SegmentView.m */; };
 		038E9ADE188CF44B00D09D21 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9ADD188CF44B00D09D21 /* SettingCell.m */; };
 		038E9AE1188CF45700D09D21 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9AE0188CF45700D09D21 /* Dock.m */; };
+		038E9AE5188D00B800D09D21 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 038E9AE4188D00B800D09D21 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +312,8 @@
 		038E9ADD188CF44B00D09D21 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingCell.m; path = view/SettingCell.m; sourceTree = "<group>"; };
 		038E9ADF188CF45700D09D21 /* Dock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dock.h; sourceTree = "<group>"; };
 		038E9AE0188CF45700D09D21 /* Dock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dock.m; sourceTree = "<group>"; };
+		038E9AE3188D00B800D09D21 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = controller/LoginViewController.h; sourceTree = "<group>"; };
+		038E9AE4188D00B800D09D21 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = controller/LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,6 +464,7 @@
 		038E99D3188CC99700D09D21 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				038E9AE2188D008900D09D21 /* home */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -671,6 +675,15 @@
 			children = (
 			);
 			path = table;
+			sourceTree = "<group>";
+		};
+		038E9AE2188D008900D09D21 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				038E9AE3188D00B800D09D21 /* LoginViewController.h */,
+				038E9AE4188D00B800D09D21 /* LoginViewController.m */,
+			);
+			name = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -887,6 +900,7 @@
 				038E99B2188CC94400D09D21 /* ViewController.m in Sources */,
 				038E99D6188CCA1100D09D21 /* DockItem.m in Sources */,
 				038E9ADE188CF44B00D09D21 /* SettingCell.m in Sources */,
+				038E9AE5188D00B800D09D21 /* LoginViewController.m in Sources */,
 				038E9AD5188CF3F400D09D21 /* MenuView.m in Sources */,
 				038E9AD8188CF40800D09D21 /* ComposeView.m in Sources */,
 				038E99E1188CE93100D09D21 /* MenuItemView.m in Sources */,
